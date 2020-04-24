@@ -1,0 +1,10 @@
+Must Be OpenAPI 3:
+  description: API must be OpenAPI 3
+  oas: all
+  severity: Critical
+  enabled: true
+  rule:
+    path: $.openapi
+    type: pattern
+    options:
+      match:  /^3\.\d+\.\d+$/ 
