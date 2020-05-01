@@ -1,0 +1,11 @@
+rule name: 
+  description: API Semantic Version String (strict)
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.info.version
+    type: match
+    options: 
+      match: >-
+        ^([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?$

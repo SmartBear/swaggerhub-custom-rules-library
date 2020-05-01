@@ -1,0 +1,10 @@
+rule name: 
+  description: API Must have Security Token
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+      Path: '$.paths.[*].security.[*]'
+      type: pattern
+      options: 
+      match: 

@@ -1,0 +1,10 @@
+rule name: 
+  description: 'API Must be [Swagger] 2.0 Standard'
+  oas: Swagger
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.swagger
+    type: match
+    options: 
+      match: ^2\.\d*$

@@ -1,0 +1,10 @@
+rule name: 
+  description: "CRUD function names must not be used in URIs\_"
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: '$..*[?(/^(http|ftp)(s?)(\:\/\/)/.test(@))]'
+    type: match
+    options: 
+      match: /^\/.*(get|read|list|add|create|post|put|patch|update|write|delete)/i

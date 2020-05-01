@@ -1,0 +1,10 @@
+rule name: 
+  description: "Every URI\_MUST\_follow the General Rules except for the\_camelCase\_rule. Instead, a hyphen (-)\_SHOULD\_be used to delimit combined words (kebab-case).\_"
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: '$..*[?(/^(http)(s?)(\:\/\/)/.test(@))]'
+    type: match
+    options: 
+      match: "^((?<MandatoryProtocol>(http|https)(:\\/\\/))(?<MandatoryDomain>[a-zA-Z\\d-]+((\\.|\\:)[a-zA-Z\\d]+)+)+(?<OptionalPath>(\\/[a-zA-Z\\d-]+)+)?)$\_"

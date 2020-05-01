@@ -1,0 +1,10 @@
+rule name: 
+  description: Non standard HTTPs headers must start format "X-ZZZAPI-" # replace the ZZZAPI with the header of your choice
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $..headers.*~
+    type: match
+    options: 
+      match: '(?:(?=^(X-))(X-ZZZAPI-)|^((?!X-).)*$)'

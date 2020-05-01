@@ -1,0 +1,10 @@
+rule name: 
+  description: "A custom HTTP Header\_SHOULD NOT\_start with\_X-\_(RFC6648)."
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $..headers.*~
+    type: match
+    options: 
+      match: ^(X-)

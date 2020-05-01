@@ -1,0 +1,11 @@
+rule name: 
+  description: Every HTTP Response Header should use Hyphenated-Pascal-Case.
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $..headers.*~
+    type: match
+    options: 
+      match: >-
+        ^(?<OneOrMoreCaps>[A-Z]+)(?<OptionalLowerCase>[a-z]+)?(?<OptionalRepeatWithDash>(-([A-Z]+)([a-z]+)?)+)?$

@@ -1,0 +1,10 @@
+rule name: 
+  description: "All\_response\_messages\_MUST\_support an\_application/hal+json\_(HAL) format.   (2 of 2)"
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: 'paths.*.[put,post,get,delete,patch,options].produces'
+    type: match
+    options: 
+      match: application/hal\+json

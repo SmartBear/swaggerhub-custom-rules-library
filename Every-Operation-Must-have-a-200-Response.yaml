@@ -1,0 +1,10 @@
+rule name: 
+  description: Every Operation Must have a 200 Response
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: 'paths.*[put,post,get,delete,patch,options].responses'
+    type: match
+    options: 
+      match: /^200/

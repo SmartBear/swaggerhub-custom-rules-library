@@ -1,0 +1,13 @@
+rule name: 
+  description: >-
+    Date and Time MUST always conform to the ISO 8601 format e.g.:
+    2017-06-21T14:07:17Z (date time) or 2017-06-21 (date), it MUST use the UTC
+    (without time offsets).
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: 
+    type: match
+    options: 
+      match: '^\d{4}(-\d\d(-\d\d(T\d\d:\d\d(:\d\d)?(\.\d+)?(([+-]\d\d:\d\d)|Z)?)?)?)?$'

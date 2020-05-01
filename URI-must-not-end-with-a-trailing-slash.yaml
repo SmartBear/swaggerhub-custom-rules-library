@@ -1,0 +1,10 @@
+rule name: 
+  description: "A URI\_must not\_end with a trailing slash (/)."
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.paths.*~
+    type: match
+    options: 
+      match: '[^\/]$'

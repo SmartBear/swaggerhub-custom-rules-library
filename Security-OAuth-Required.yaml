@@ -1,0 +1,10 @@
+rule name: 
+  description: API Security OAuth Required
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: '$.paths.[*].security.[*]'
+    type: match
+    options: 
+      match: /^OAuth2/

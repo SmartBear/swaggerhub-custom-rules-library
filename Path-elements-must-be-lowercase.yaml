@@ -1,0 +1,10 @@
+rule name: 
+  description: Path elements must be lowercase
+  oas: Both
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.paths.*~
+    type: match
+    options: 
+      match: '^[\/a-z\{\}]+$'
