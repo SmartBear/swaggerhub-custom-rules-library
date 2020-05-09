@@ -1,6 +1,6 @@
 Hal-JSON-2: 
   description: "All\_response\_messages\_MUST\_support an\_application/hal+json\_(HAL) format.   (2 of 2)"
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
