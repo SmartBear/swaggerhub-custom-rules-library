@@ -1,6 +1,6 @@
 Custom-HTTP-header-cannot-start-with-X: 
   description: "A custom HTTP Header SHOULD NOT start with X- (RFC6648)."
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
