@@ -1,6 +1,6 @@
 HTTP-response-header-Hyphenated-Pascal-Case: 
   description: Every HTTP Response Header should use Hyphenated-Pascal-Case.
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
