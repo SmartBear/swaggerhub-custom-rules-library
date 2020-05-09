@@ -1,6 +1,6 @@
-rule name: 
+URI-camelCase: 
   description: "Every URI\_MUST\_follow the General Rules except for the\_camelCase\_rule. Instead, a hyphen (-)\_SHOULD\_be used to delimit combined words (kebab-case).\_"
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
