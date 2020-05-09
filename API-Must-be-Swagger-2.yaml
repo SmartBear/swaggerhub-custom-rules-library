@@ -1,4 +1,4 @@
-rule name: 
+API-Must-be-Swagger-2: 
   description: 'API Must be [Swagger] 2.0 Standard'
   oas: Swagger
   severity: critical
