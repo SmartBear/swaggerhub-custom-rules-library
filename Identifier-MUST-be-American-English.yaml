@@ -1,10 +1,10 @@
-Identifier MUST be :
+Identifier-MUST-be-American-English:
   description: Every identifier MUST be in American English and written in lowercase. An identifier SHOULD NOT cont
   oas: all
   severity: Critical
   enabled: true
   rule:
     path: $.paths.*~
-    type: pattern
+    type: match
     options:
       match: ([a-z]+[A-Z]\w+)
