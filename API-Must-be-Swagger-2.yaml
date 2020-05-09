@@ -1,6 +1,6 @@
 API-Must-be-Swagger-2: 
   description: 'API Must be [Swagger] 2.0 Standard'
-  oas: Swagger
+  oas: all
   severity: critical
   enabled: true
   rule: 
