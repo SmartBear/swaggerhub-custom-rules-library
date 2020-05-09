@@ -1,4 +1,4 @@
-rule name: 
+Every-Operation-Must-have-a-200-Response: 
   description: Every Operation Must have a 200 Response
   oas: Both
   severity: critical
