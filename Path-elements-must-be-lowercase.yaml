@@ -1,6 +1,6 @@
-rule name: 
+Path-elements-must-be-lowercase: 
   description: Path elements must be lowercase
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
