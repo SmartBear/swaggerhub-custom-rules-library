@@ -1,10 +1,10 @@
-rule name: 
+Must-include-a-basePath: 
   description: 'Must include a basePath '
   oas: Swagger
   severity: critical
   enabled: true
   rule: 
     Path: basePath
-    type: pattern
+    type: shouldExists
     options: 
       match: 
