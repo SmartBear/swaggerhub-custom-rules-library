@@ -1,6 +1,6 @@
 No-CRUD-Fuction-names-in-URIs: 
   description: "CRUD function names must not be used in URIs\_"
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
