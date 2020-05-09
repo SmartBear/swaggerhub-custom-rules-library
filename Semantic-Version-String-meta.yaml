@@ -1,6 +1,6 @@
-rule name: 
+Semantic-Version-String-meta: 
   description: API Semantic Version String with meta tags
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
