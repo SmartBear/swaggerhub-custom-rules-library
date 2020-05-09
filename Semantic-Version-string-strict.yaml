@@ -1,6 +1,6 @@
-rule name: 
+Semantic-Version-string-strict: 
   description: API Semantic Version String (strict)
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
