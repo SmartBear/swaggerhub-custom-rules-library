@@ -1,6 +1,6 @@
-rule name: 
+Security-OAuth-Required: 
   description: API Security OAuth Required
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
