@@ -1,6 +1,6 @@
-rule name: 
+URI-must-not-end-with-a-trailing-slash: 
   description: "A URI\_must not\_end with a trailing slash (/)."
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
