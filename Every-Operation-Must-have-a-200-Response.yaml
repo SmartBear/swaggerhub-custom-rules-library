@@ -1,6 +1,6 @@
 Every-Operation-Must-have-a-200-Response: 
   description: Every Operation Must have a 200 Response
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
