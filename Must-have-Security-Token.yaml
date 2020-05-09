@@ -5,6 +5,6 @@ Must-have-Security-Token:
   enabled: true
   rule: 
       Path: '$.paths.[*].security.[*]'
-      type: match
+      type: shouldExists
       options: 
         match: 
