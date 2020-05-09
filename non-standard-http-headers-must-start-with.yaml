@@ -1,6 +1,6 @@
-rule name: 
+non-standard-http-headers-must-start-with: 
   description: Non standard HTTPs headers must start format "X-ZZZAPI-" # replace the ZZZAPI with the header of your choice
-  oas: Both
+  oas: all
   severity: critical
   enabled: true
   rule: 
