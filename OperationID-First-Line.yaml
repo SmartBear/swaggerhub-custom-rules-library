@@ -1,0 +1,10 @@
+OperationID must be first line in operation: 
+  description: 'Operation must have the `operationId`, and it must be the 1st line in the operation'
+  oas: all
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.paths.*[get,post,put,patch,delete,options,head,trace]
+    type: match
+    options: 
+      match: ^operationId:
