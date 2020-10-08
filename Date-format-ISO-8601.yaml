@@ -1,0 +1,10 @@
+Date-format-ISO-8601
+  description: 'Dates MUST conform to the ISO-8601 format.'
+  oas: all
+  severity: critical
+  enabled: true
+  rule: 
+    Path: 
+    type: match
+    options: 
+      match: ^\d{4}(-\d\d(-\d\d(T\d\d:\d\d(:\d\d)?(\.\d+)?(([+-]\d\d:\d\d)|Z)?)?)?)?$ 
