@@ -1,5 +1,5 @@
 # swaggerhub-custom-rules-library
- Public Custom Rules libary for SwaggerHub API Standardization
+ Public Custom Rules library for SwaggerHub API Standardization
 
 
 Add rules to this repository that can be used in SwaggerHub's API standardization.
