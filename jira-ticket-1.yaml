@@ -1,0 +1,10 @@
+Must have x-jira-ticket extensio
+  description: 'Info section must have a custom extension x-jira-ticket'
+  oas: all
+  severity: critical
+  enabled: true
+  rule: 
+    Path: $.info.x-jira-ticket
+    type: shouldExists
+    options: 
+      match: 
