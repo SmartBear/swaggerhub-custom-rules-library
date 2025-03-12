@@ -1,4 +1,4 @@
-No-CRUD-Fuction-names-in-URIs: 
+No-CRUD-Function-names-in-URIs: 
   description: "CRUD function names must not be used in URIs\_"
   oas: all
   severity: critical
